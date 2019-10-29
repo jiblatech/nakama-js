@@ -1,5 +1,18 @@
 'use strict';
 
+let btoa = require("btoa")
+let atob = require("atob")
+
+require('isomorphic-fetch');
+
+var WebSocket = require('ws')
+
+Object.defineProperty(exports, "__esModule", { value: true })
+if (typeof window === "undefined") {
+	global.window = {}
+}
+
+
 Object.defineProperty(exports, '__esModule', { value: true });
 
 (function () {
